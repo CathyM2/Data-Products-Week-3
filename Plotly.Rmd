@@ -1,0 +1,22 @@
+---
+title: "Plotly Week 2"
+author: "Cathy M"
+date: "2023-05-10"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+library(plotly)
+```
+## Iris
+10th May 2023 
+
+
+
+```{r}
+gg<- ggplot(data = iris) + 
+      geom_point(aes(x=Sepal.Length, y = Sepal.Width, col=Species)) 
+ggplotly(gg)
+```
