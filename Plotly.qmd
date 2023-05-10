@@ -1,0 +1,17 @@
+---
+title: "Plotly"
+format: revealjs
+editor: visual
+---
+## Iris
+10th May 2023 
+
+
+
+```{r}
+library(ggplot2)
+library(plotly)
+gg<- ggplot(data = iris) + 
+      geom_point(aes(x=Sepal.Length, y = Sepal.Width, col=Species)) 
+ggplotly(gg)
+```
